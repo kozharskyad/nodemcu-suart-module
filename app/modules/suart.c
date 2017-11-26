@@ -22,14 +22,6 @@ static uint32_t SUART_BIT_TIME;
 static uint8_t terminator = 0;
 static uint8_t buffer[BUFFER_SIZE];
 static uint8_t buffer_pos = 0;
-static uint32_t last_recv_time = 0;
-
-typedef void (*rx_function)(void);
-
-struct suart_rx_intr_param {
-    uint8_t gpio_id;
-    rx_function rx_func;
-};
 
 typedef struct {
 	uint32_t gpio_mux_name;
