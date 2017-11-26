@@ -34,4 +34,8 @@ end)
 5) Send string data terminated by dollar sign ("$")
 6) You must see "Received data: Hello, World!" in your esplorer lua console
 
+WARNING!
+Currently stable work on 9600 baud rate
+115200 baud rate make undefined behaviour and much data loss
+
 Contributors are welcome!
